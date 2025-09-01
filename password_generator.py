@@ -45,7 +45,7 @@ def password_generator(length=16):
     return "".join(password)
 
 final_password = password_generator()
-print(f"Your Password is:",{final_password})
+print(f"Your Password is:",final_password)
 
 
 

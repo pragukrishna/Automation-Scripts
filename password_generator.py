@@ -1,10 +1,10 @@
 import random
 import string
 
-indices = list(range(16))
-num_indices = 16
-random_index = random.sample(indices, num_indices)
-#print(random_index)
+# indices = list(range(16))
+# num_indices = 16
+# random_index = random.sample(indices, num_indices)
+# #print(random_index)
 
 def uppercase_letter():
     """ returns uppercase of all letters in alphabets """
@@ -30,8 +30,8 @@ def password_generator(length=16):
     """ generates random string of 16 values containing atleast 1 uppercase, 1 lowercase, 
     1 spcl character, 1 number from 0 to 9"""
 
-    if length < 4:
-        raise ValueError("length must be atleast 4 to allocate each of the 4 values")
+    if length < 16:
+        raise ValueError("The length must always be 16")
 
     must_char = [uppercase_letter(), lowercase_letter(), spclcase_letter(), num()]
 
@@ -46,3 +46,9 @@ def password_generator(length=16):
 
 final_password = password_generator()
 print(f"Your Password is:",{final_password})
+
+
+
+
+    
+    
